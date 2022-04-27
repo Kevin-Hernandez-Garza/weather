@@ -1,9 +1,73 @@
+* {
+box-sizing: border-box;
+border-radius: 0.3rem;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+background-color: var(--primary);
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+color: var(--dark);
+background: #eaf4f4;
+line-height: 1.5;
+font-size: 16px;
 }
 
+/* everything after the heading */
+main {
+    margin: 20px auto;
+    width: 94%;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+/* the body container */
+/* .flex-column {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+} */
+
+/* main heading */
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
+font-family: 'Playfair Display', serif;
+font-size: 3em;
+background: linear-gradient(0.60turn, #6b9080, #cce3de, #a4c3b2);
+color: #fff;
+text-shadow: 2px 2px 2px #000;
+padding: 0.5em 0;
+display: flex;
+justify-content: center;
 }
 
+/* title for all containers */
+.subtitle {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* spaces out the daily forecast evenly */
+.grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+/* customizing the button for the search history */
+.list-group button {
+    border-radius: 0.5em;
+    margin: 0.5rem 0; 
+
+}
+
+/* setting bottom for all containers */
+.card {
+    margin-bottom: 0.5rem;
+}

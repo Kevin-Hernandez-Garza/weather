@@ -48,12 +48,13 @@
 
     <main class="flex-row justify-space-between col-12">
       <!-- left column -->
-      <div class="col-md-3">
-        <div class="card">
+      <div class="col-12 col-md-3">
+
+        <div class="card text-center">
           <h3 class="card-header subtitle">Search By City</h3>
-          <form id="city" class="card-body">
+          <form id="user-form" class="card-body">
             <input
-              name="city-search"
+              name="city"
               id="city"
               type="text"
               autofocus="true"
@@ -66,36 +67,19 @@
 
         <div class="card">
           <h3 class="card-header subtitle">History</h3>
-
           <div class="card-body" id="search-history">
-            <div class="list-group">
-              <button
-                type="button"
-                class="list-group-flush list-group-item-action text-center"
-              >
-                Austin
-              </button>
-
-              <button
-                type="button"
-                class="list-group-flush list-group-item-action text-center"
-              >
-                Seattle
-              </button>
-
-              <button
-                type="button"
-                class="list-group-flush list-group-item-action text-center"
-              >
-                Boston
-              </button>
+            <div class="d-grid gap-2">
+              <!-- change the type to submit, since it doesn't send request to server -->
+              <button class="btn" type="button">Button</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="col-12 col-md-8">
       <!-- right column -->
-      <div class="col-md-8 card">
+      <div class="card">
         <h2 class="subtitle">Current Date (MM/DD/YYYY) Icon</h2>
         <div id="current-weather" class="card-body">
           <p>Temp</p>
@@ -105,7 +89,7 @@
         </div>
       </div>
 
-      <div class="col-md-8 card">
+      <div class="card">
         <h2 class="subtitle">5 Day Forecast</h2>
 
         <div id="future-forecast" class="grid">

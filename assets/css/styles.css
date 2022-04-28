@@ -1,17 +1,17 @@
 * {
-box-sizing: border-box;
-border-radius: 0.3rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
 }
 
 body {
-background-color: var(--primary);
-margin: 0;
-padding: 0;
-font-family: 'Roboto', sans-serif;
-color: var(--dark);
-background: #eaf4f4;
-line-height: 1.5;
-font-size: 16px;
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+    background: #eaf4f4;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 /* everything after the heading */
@@ -24,25 +24,18 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-
-/* the body container */
-/* .flex-column {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-} */
+}
 
 /* main heading */
 h1 {
-font-family: 'Playfair Display', serif;
-font-size: 3em;
-background: linear-gradient(0.60turn, #6b9080, #cce3de, #a4c3b2);
-color: #fff;
-text-shadow: 2px 2px 2px #000;
-padding: 0.5em 0;
-display: flex;
-justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    background: linear-gradient(0.60turn, #6b9080, #cce3de, #a4c3b2);
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
 }
 
 /* title for all containers */
@@ -50,6 +43,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     padding: 1rem 0;
+    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -58,6 +52,7 @@ justify-content: center;
     display: flex;
     justify-content: space-around;
     padding: 1rem 0;
+    font-size: 1rem;
 }
 
 /* customizing the button for the search history */
@@ -70,4 +65,30 @@ justify-content: center;
 /* setting bottom for all containers */
 .card {
     margin-bottom: 0.5rem;
+}
+
+/* search button */
+.btn {
+    background-color: #0096c7;
+    border-radius: 1em;
+    border: 2px solid #000;
+    color: #fff;
+    padding: 0.8em;
+    /* the animation happens after 0.25seconds */
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.btn:hover {
+    border-color: #48cae4;
+    background-color: #a8dadc;
+    color: #000;
+    /* X-axis | Y-axis | Blur-radius | Spread-radius | Color */
+    box-shadow: 0 0.5em 0.5em -0.4em #023e8a;
+    /* moves the element on hover, upwards */
+    transform: translateY(-0.50em);
+}
+
+/* button & input elements */
+.btn, #city {
+    margin: 0.5em 0;
 }

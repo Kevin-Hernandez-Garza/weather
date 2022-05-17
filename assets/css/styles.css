@@ -1,29 +1,21 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: var(--primary);
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
     color: var(--dark);
     background: #eaf4f4;
     line-height: 1.5;
     font-size: 16px;
 }
 
-/* everything after the heading */
-main {
-    margin: 20px auto;
-    width: 94%;
-}
-
-.flex-row {
+/* centering the 5 day forecast cards */
+.daily {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* main heading */
@@ -41,18 +33,26 @@ h1 {
 /* title for all containers */
 .subtitle {
     display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 1rem 0;
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* spaces out the daily forecast evenly */
-.grid {
-    display: flex;
-    justify-content: space-around;
+.daily-grid {
+    background-color: #fefae0;
     padding: 1rem 0;
     font-size: 1rem;
+}
+
+.forecast-day {
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+.date {
+    margin-top: 0.5em;
 }
 
 /* customizing the button for the search history */
@@ -73,7 +73,6 @@ h1 {
     border-radius: 1em;
     border: 2px solid #000;
     color: #fff;
-    padding: 0.8em;
     /* the animation happens after 0.25seconds */
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
 }

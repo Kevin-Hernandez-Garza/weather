@@ -16,6 +16,7 @@ body {
 .daily {
     display: flex;
     justify-content: space-between;
+    font-size: 0.6rem;
 }
 
 /* main heading */
@@ -90,4 +91,9 @@ h1 {
 /* button & input elements */
 .btn, #city {
     margin: 0.5em 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }
